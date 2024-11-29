@@ -1,0 +1,50 @@
+.welcome-header{
+    display:flex;
+    text-align: center;
+    margin: 100px 0px;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.welcome-header__title{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.welcome-header__text{
+    width:50%;
+    opacity: 0.5;
+}
+
+#longin-form{
+    display:flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+#longin-form input{
+    border:none;
+    font-size: 18px;
+    padding: 15px 0px;
+    margin-bottom: 20px;
+}
+#longin-form input:not([type="submit"]){
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out;
+}
+#longin-form input::placeholder{
+    color: rgba(0,0,0,0.4);
+}
+#longin-form input:focus{
+    border-color: var(--yellow);
+}
+#longin-form input[type="submit"]{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    cursor:pointer;
+    padding:20px 0px;
+}
+#longin-form a{
+    text-align: center;
+    text-decoration: none;
+    color:inherit;
+    font-size: 13px;
+}

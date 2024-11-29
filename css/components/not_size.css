@@ -1,0 +1,19 @@
+#Not_size{
+    position: absolute;
+    z-index: 99;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: var(--yellow);
+    width:100vw;
+    height: 100vh;
+    top:0px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:645px) and (orientation: portrait) {
+    #Not_size{
+        display: none;
+    }
+}

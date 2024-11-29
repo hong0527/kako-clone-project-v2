@@ -1,0 +1,24 @@
+.icon-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top:25px;
+    padding-bottom: 25px;
+}
+
+.icon-row__icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-row__icon span{
+    padding-top: 25px;
+}
+.icons-position-ab{
+    position: absolute;
+    bottom: 20px;
+    right: -5px;
+}
+.icons-position-re{
+    position: relative;
+}

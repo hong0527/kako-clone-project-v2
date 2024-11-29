@@ -1,0 +1,109 @@
+
+.recommended-friends{
+    border-top: var(--main-border);
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+    padding: 25px 0px;
+}
+.recommended-friends__title{
+    font-size: 14px;
+    color:var(--gray);
+    font-weight: 400;
+}
+.recommended-friends span{
+    display:block;
+    margin: 100px 0px;
+    text-align: center;
+    color:var(--gray);
+    font-size: 18px;
+    font-weight: 400;
+}
+.open-chat__header{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    opacity: 0.7;
+    margin-bottom: 25;
+}
+.open-chat__header span{
+    opacity: 0.5;
+}
+.open-post{
+    margin-top: 25px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.open-post__title{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.open-post__hashtags{
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+.open-post__members{
+    display:flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.open-post__members img{
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+.open-post__member-count{
+    opacity: 0.6;
+    font-size: 14px;
+}
+.open-post__members .divider{
+    width:1px;
+    height: 12px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 0px 5px;
+}
+.open-post__member-status{
+    color: #FF7FCE;
+}
+.open-photo img{
+    width:100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.open-photo__heart-count{
+    padding:5px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    color:white;
+    position: absolute;
+    right:10px;
+    bottom:10px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    transition: all 1s ease-in-out;
+}
+.open-photo__heart-count span{
+    margin-left:3px;
+}
+.open-photo{
+    position: relative;
+}
+
+@keyframes heart_boom{
+    0%{
+        transform: none;
+    }
+    50%{
+        transform: scale(1.5);
+        color:tomato;
+    }
+    100%{
+        transform: none;
+    }
+}
+.open-photo__heart-count .fa-heart{
+    will-change: transform;
+    animation: heart_boom 1s linear infinite;
+}
