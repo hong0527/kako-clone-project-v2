@@ -22,3 +22,7 @@
 .icons-position-re{
     position: relative;
 }
+.more-class .icon-row:nth-child(3) .icon-row__icon:nth-child(3),
+.more-class .icon-row:nth-child(3) .icon-row__icon:nth-child(4){
+    visibility: hidden;
+}
